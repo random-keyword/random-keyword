@@ -15,7 +15,7 @@
     "serve": "next dev",
     "start": "next start",
     "build": "next build",
-    "export": "rm -rf node_modules/.cache && next build && next export -o app/ && touch app/.nojekyll && git add app/"
+    "export": "rm -rf node_modules/.cache && next build && next export -o app/ && touch app/.nojekyll"
   },
   "keywords": [],
   "author": "NIHILncunia",
