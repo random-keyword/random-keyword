@@ -29,7 +29,7 @@ const KeywordRandom = () => {
         <meta property='og:title' content={text.title} />
         <meta name='twitter:title' content={text.title} />
         <meta property='og:url' content={text.link} />
-        <title>랜덤 키워드 - 랜덤 키워드</title>
+        <title>{text.title}</title>
       </Head>
       <StyledArticle>
         <div id='keyword-display'>

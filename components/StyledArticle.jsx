@@ -46,7 +46,7 @@ const StyledArticle = ({ children, }) => {
             font-size: 1.1rem;
           }
           @media (min-width: 1px) and (max-width: 450px) {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: 400;
           }
 
@@ -92,7 +92,7 @@ const StyledArticle = ({ children, }) => {
             font-size: 2rem;
           }
           @media (min-width: 1px) and (max-width: 450px) {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
           }
         }
 
@@ -103,7 +103,7 @@ const StyledArticle = ({ children, }) => {
             font-size: 1.5rem;
           }
           @media (min-width: 1px) and (max-width: 450px) {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
           }
         }
       }
@@ -122,7 +122,7 @@ const StyledArticle = ({ children, }) => {
         font-size: 1.6rem;
       }
       @media (min-width: 1px) and (max-width: 450px) {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
     }
 
@@ -139,7 +139,7 @@ const StyledArticle = ({ children, }) => {
         font-size: 1.1rem;
       }
       @media (min-width: 1px) and (max-width: 450px) {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 400;
       }
     }
@@ -154,7 +154,7 @@ const StyledArticle = ({ children, }) => {
         font-size: 1.1rem;
       }
       @media (min-width: 1px) and (max-width: 450px) {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 400;
       }
 

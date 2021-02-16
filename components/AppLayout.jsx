@@ -23,7 +23,7 @@ const AppLayout = ({ children, }) => {
         font-size: 2.4rem;
       }
       @media (min-width: 1px) and (max-width: 450px) {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
       }
     }
 
@@ -46,7 +46,7 @@ const AppLayout = ({ children, }) => {
           font-size: 1.1rem;
         }
         @media (min-width: 1px) and (max-width: 450px) {
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           font-weight: 400;
         }
 
@@ -71,7 +71,7 @@ const AppLayout = ({ children, }) => {
       font-size: 1.5rem;
     }
     @media (min-width: 1px) and (max-width: 450px) {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     & > p {
@@ -117,6 +117,7 @@ const AppLayout = ({ children, }) => {
           <Link href='/keyword/character'><a>캐릭터 컨셉</a></Link>
           <Link href='/keyword/clothes'><a>패션 컨셉</a></Link>
           <Link href='/keyword/theme'><a>여러가지 테마</a></Link>
+          <Link href='/keyword/color'><a>랜덤 컬러</a></Link>
           <Link href='/keyword/random'><a>랜덤 키워드</a></Link>
         </nav>
       </header>

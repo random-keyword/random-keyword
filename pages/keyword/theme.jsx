@@ -60,7 +60,7 @@ const KeywordTheme = () => {
         <meta property='og:title' content={text.title} />
         <meta name='twitter:title' content={text.title} />
         <meta property='og:url' content={text.link} />
-        <title>여러가지 테마 - 랜덤 키워드</title>
+        <title>{text.title}</title>
       </Head>
       <StyledArticle>
         <div id='keyword-display'>
