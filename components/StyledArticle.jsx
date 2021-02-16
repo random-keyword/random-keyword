@@ -123,6 +123,7 @@ const StyledArticle = ({ children, }) => {
       text-indent: 15px;
       font-size: 14pt;
       line-height: 1.5;
+      font-weight: 500;
     }
 
     & > ul {
