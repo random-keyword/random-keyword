@@ -20,7 +20,10 @@ export const getRandomKeywordDetail = () => {
   if (item === '공구') {
     newItem = getKeyword(tool);
     return newItem;
-  } else if (item === ('천문학' || '천체')) {
+  } else if (item === '천체') {
+    newItem = getKeyword(astronomy);
+    return newItem;
+  } else if (item === '천문학') {
     newItem = getKeyword(astronomy);
     return newItem;
   } else if (item === '식기') {
@@ -29,10 +32,16 @@ export const getRandomKeywordDetail = () => {
   } else if (item === '과일') {
     newItem = getKeyword(fruit);
     return newItem;
-  } else if (item === ('야채' || '채소')) {
+  } else if (item === '야채') {
     newItem = getKeyword(vegetable);
     return newItem;
-  } else if (item === ('보석' || '암석')) {
+  } else if (item === '채소') {
+    newItem = getKeyword(vegetable);
+    return newItem;
+  } else if (item === '보석') {
+      newItem = getKeyword(gem);
+      return newItem;
+  } else if (item === '암석') {
     newItem = getKeyword(gem);
     return newItem;
   } else if (item === '기상') {
@@ -53,7 +62,10 @@ export const getRandomKeywordDetail = () => {
   } else if (item === '합금') {
     newItem = getKeyword(metal);
     return newItem;
-  } else if (item === ('도형' || '다면체')) {
+  } else if (item === '도형') {
+    newItem = getKeyword(figure);
+    return newItem;
+  } else if (item === '다면체') {
     newItem = getKeyword(figure);
     return newItem;
   } else if (item === '신체') {
