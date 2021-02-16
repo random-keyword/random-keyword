@@ -78,7 +78,11 @@ const KeywordNIHIL = () => {
           <div id='keyword-container'>
             <div>
               <p className={size}>{keyword}</p>
-              {isDesc ? desc : ''}
+              {
+                isDesc
+                ? <p className='middle'>{desc}</p>
+                : ''
+              }
             </div>
           </div>
         </div>

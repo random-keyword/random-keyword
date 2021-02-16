@@ -40,7 +40,7 @@ const KeywordTheme = () => {
     const item = getMajor();
 
     setKeyword(<span className='blue-block'>{item.card}</span>);
-    setSub(<span className='blue-small'>{item.direction}</span>);
+    setSub(<span className='blue'>{item.direction}</span>);
     setIsSub(true);
     setSize('normal');
   }, []);
@@ -49,7 +49,7 @@ const KeywordTheme = () => {
     const item = getMinor();
 
     setKeyword(<span className='blue-block'>{item.card}</span>);
-    setSub(<span className='blue-small'>{item.message}</span>);
+    setSub(<span className='blue'>{item.message}</span>);
     setIsSub(true);
     setSize('normal');
   }, []);
@@ -76,7 +76,7 @@ const KeywordTheme = () => {
               <p className={size}>{ keyword }</p>
               {
                 isSub ? (
-                  <p className='small'>{sub}</p>
+                  <p className='middle'>{sub}</p>
                 ) : (
                   ''
                 )

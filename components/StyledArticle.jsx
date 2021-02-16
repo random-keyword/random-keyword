@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const StyledArticle = ({ children, }) => {
   const articleStyle = css`
-    padding: 0px 10px;
+    padding: 7px 10px 10px 10px;
     box-sizing: border-box;
     height: 100%;
 
@@ -20,11 +20,6 @@ const StyledArticle = ({ children, }) => {
       & > header {
         width: 100%;
         box-sizing: border-box;
-
-        & > p {
-          margin-bottom: 3px;
-          font-weight: 500;
-        }
 
         & > .none {
           color: #ffffff;
@@ -42,10 +37,18 @@ const StyledArticle = ({ children, }) => {
           outline: none;
           cursor: pointer;
           padding: 0px 5px;
-          font-size: 12pt;
+          font-size: 1.3rem;
           margin-top: 3px;
           margin-right: 3px;
           border-radius: 5px;
+
+          @media (min-width: 451px) and (max-width: 800px) {
+            font-size: 1.1rem;
+          }
+          @media (min-width: 1px) and (max-width: 450px) {
+            font-size: 0.9rem;
+            font-weight: 400;
+          }
 
           &:hover {
             color: #3178f2;
@@ -80,27 +83,27 @@ const StyledArticle = ({ children, }) => {
             font-weight: 900;
             display: block;
           }
-
-          & > .blue-small {
-            color: #3178f2;
-            font-size: 24pt;
-            font-weight: 900;
-          }
         }
 
         & > div > .normal {
-          font-size: 36pt;
+          font-size: 3rem;
+
+          @media (min-width: 451px) and (max-width: 800px) {
+            font-size: 2rem;
+          }
+          @media (min-width: 1px) and (max-width: 450px) {
+            font-size: 1.4rem;
+          }
         }
 
         & > div > .middle {
-          font-size: 24pt;
-        }
+          font-size: 2rem;
 
-        & > div > .small {
-          font-size: 16pt;
-
-          & > span {
-            font-weight: 900;
+          @media (min-width: 451px) and (max-width: 800px) {
+            font-size: 1.5rem;
+          }
+          @media (min-width: 1px) and (max-width: 450px) {
+            font-size: 1.2rem;
           }
         }
       }
@@ -113,7 +116,14 @@ const StyledArticle = ({ children, }) => {
       padding: 5px 10px;
       border-left: 20px solid #3178f2;
       color: #3178f2;
-      font-size: 24pt;
+      font-size: 2.2rem;
+
+      @media (min-width: 451px) and (max-width: 800px) {
+        font-size: 1.6rem;
+      }
+      @media (min-width: 1px) and (max-width: 450px) {
+        font-size: 1.4rem;
+      }
     }
 
     & > p {
@@ -121,15 +131,32 @@ const StyledArticle = ({ children, }) => {
       margin-bottom: 20px;
       text-align: justify;
       text-indent: 15px;
-      font-size: 14pt;
+      font-size: 1.3rem;
       line-height: 1.5;
       font-weight: 500;
+
+      @media (min-width: 451px) and (max-width: 800px) {
+        font-size: 1.1rem;
+      }
+      @media (min-width: 1px) and (max-width: 450px) {
+        font-size: 0.9rem;
+        font-weight: 400;
+      }
     }
 
     & > ul {
       margin-top: 20px;
       margin-bottom: 20px;
-      font-size: 14pt;
+      font-size: 1.3rem;
+      font-weight: 500;
+
+      @media (min-width: 451px) and (max-width: 800px) {
+        font-size: 1.1rem;
+      }
+      @media (min-width: 1px) and (max-width: 450px) {
+        font-size: 0.9rem;
+        font-weight: 400;
+      }
 
       & > li:nth-of-type(1) {
         margin-top: 0px;
@@ -154,7 +181,6 @@ const StyledArticle = ({ children, }) => {
           color: #ffffff;
           display: inline-block;
           border-radius: 5px;
-          font-weight: 500;
 
           &:hover {
             color: #3178f2;

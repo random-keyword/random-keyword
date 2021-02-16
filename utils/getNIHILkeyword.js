@@ -16,88 +16,88 @@ export const organizationDesc = (item) => {
   let desc;
   switch (item) {
     case '구 대제국 황도 13 기사단':
-      desc = <p className='small'>황도 13궁 하나 하나를 상징하는 13개의 기사단을 통틀어서 부르는 이름.</p>;
+      desc = <span className='blue'>황도 13궁 하나 하나를 상징하는 13개의 기사단을 통틀어서 부르는 이름.</span>;
       break;
     case '대제국 흑도 13 기사단':
-      desc = <p className='small'>황도 13 기사단이 해체되고 이레귤러에 의해 세워진 새로운 기사단.<br />악을 섬기는 악의 기사단이다.</p>;
+      desc = <span className='blue'>황도 13 기사단이 해체되고 이레귤러에 의해 세워진 새로운 기사단.<br />악을 섬기는 악의 기사단이다.</span>;
       break;
     case '신 제국 기사단':
-      desc = <p className='small'><span>신(Sin) 제국</span>에서 운용하는 기사단.<br />다양한 기사단이 존재한다.</p>;
+      desc = <span className='blue'><sspanan>신(Sin) 제국</sspanan>에서 운용하는 기사단.<br />다양한 기사단이 존재한다.</span>;
       break;
     case '황금향 기사단':
-      desc = <p className='small'>황금을 두른 기사들.<br />빛의 신을 섬기는 신자들이기도 하다.</p>;
+      desc = <span className='blue'>황금을 두른 기사들.<br />빛의 신을 섬기는 신자들이기도 하다.</span>;
       break;
     case '레드 마운틴 도적단':
-      desc = <p className='small'>알세이아 대륙단 전체에 걸쳐 수많은 요새와 기지를 보유하고 있는<br /> 강력한 도적집단. 희대의 골칫거리.</p>;
+      desc = <span className='blue'>알세이아 대륙단 전체에 걸쳐 수많은 요새와 기지를 보유하고 있는<br /> 강력한 도적집단. 희대의 골칫거리.</span>;
       break;
     case '블루 스피어 도적단':
-      desc = <p className='small'>레드 마운틴 도적단과 경쟁하는 마찬가지로 강력한 도적집단.<br />레드 마운틴 도적단보다는 양반이다.</p>;
+      desc = <span className='blue'>레드 마운틴 도적단과 경쟁하는 마찬가지로 강력한 도적집단.<br />레드 마운틴 도적단보다는 양반이다.</span>;
       break;
     case '다크 스퀘어':
-      desc = <p className='small'>다르크 엘피안으로 구성된 비밀결사.<br />데몬스톤 유저들을 모아 이레귤러를 파멸시키려한다.</p>;
+      desc = <span className='blue'>다르크 엘피안으로 구성된 비밀결사.<br />데몬스톤 유저들을 모아 이레귤러를 파멸시키려한다.</span>;
       break;
     case '푸른 극락조 수호결사단':
-      desc = <p className='small'>신 제국의 어느 한 지역에서부터 탄생한 집단.<br />흑인들로 구성되어있다.</p>;
+      desc = <span className='blue'>신 제국의 어느 한 지역에서부터 탄생한 집단.<br />흑인들로 구성되어있다.</span>;
       break;
     case '블랙 윈터':
-      desc = <p className='small'>뛰어난 마법사들만이 들어갈 수 있는 마법사들의 집단.<br />비밀결사이다.</p>;
+      desc = <span className='blue'>뛰어난 마법사들만이 들어갈 수 있는 마법사들의 집단.<br />비밀결사이다.</span>;
       break;
     case '데스 아크스':
-      desc = <p className='small'>세상을 파괴하려는 미치광이들이 속해있는 집단.<br />데몬스톤을 카피한 붉은 데몬스톤을 보유한다.</p>;
+      desc = <span className='blue'>세상을 파괴하려는 미치광이들이 속해있는 집단.<br />데몬스톤을 카피한 붉은 데몬스톤을 보유한다.</span>;
       break;
     case '안티 노른':
-      desc = <p className='small'>수 세기 전에 몰락한 집단을 누군가가 다시 일으켰다.<br />미치광이들로 가득하지만 뛰어난 마도과학력을 지니고 있다.</p>;
+      desc = <span className='blue'>수 세기 전에 몰락한 집단을 누군가가 다시 일으켰다.<br />미치광이들로 가득하지만 뛰어난 마도과학력을 지니고 있다.</span>;
       break;
     case '매드 스펠즈':
-      desc = <p className='small'>안티 노른의 산하 집단. 여기엔 마법사들이 속한다.<br />마찬가지로 미치광이들로만 가득하다.</p>;
+      desc = <span className='blue'>안티 노른의 산하 집단. 여기엔 마법사들이 속한다.<br />마찬가지로 미치광이들로만 가득하다.</span>;
       break;
     case '블러드 라인':
-      desc = <p className='small'>쉽게 말해 테러리스트들.<br />레드 마운틴보다도 과격하지만 소수정예로 움직인다.</p>;
+      desc = <span className='blue'>쉽게 말해 테러리스트들.<br />레드 마운틴보다도 과격하지만 소수정예로 움직인다.</span>;
       break;
     case '데모닉 오더':
-      desc = <p className='small'>소유주의 몸을 빼앗은 데몬스톤들의 집단.<br />데몬스톤들을 결집시켜 이레귤러를 파하려한다.<br />이들에게는 인류또한 적이다.</p>;
+      desc = <span className='blue'>소유주의 몸을 빼앗은 데몬스톤들의 집단.<br />데몬스톤들을 결집시켜 이레귤러를 파하려한다.<br />이들에게는 인류또한 적이다.</span>;
       break;
     case '북방 레지스탕스':
-      desc = <p className='small'>철벽 섬에 요새를 두고 있는 집단. 수호자들로 이루어져 있다.<br />지금은 병력을 보강중에 있다.</p>;
+      desc = <span className='blue'>철벽 섬에 요새를 두고 있는 집단. 수호자들로 이루어져 있다.<br />지금은 병력을 보강중에 있다.</span>;
       break;
     case '수호자 연합':
-      desc = <p className='small'>범세계적인 집단. 수호자들이라면 수호자 연합에 반드시 소속된다.<br />수호자를 양성, 파견한다.</p>;
+      desc = <span className='blue'>범세계적인 집단. 수호자들이라면 수호자 연합에 반드시 소속된다.<br />수호자를 양성, 파견한다.</span>;
       break;
     case '정화기관':
-      desc = <p className='small'>이레귤러 헌터라고도 불리는 자들. 수호자 연합과<br />연계하는 정화사들이다. 혼돈을 정화한다.</p>;
+      desc = <span className='blue'>이레귤러 헌터라고도 불리는 자들. 수호자 연합과<br />연계하는 정화사들이다. 혼돈을 정화한다.</span>;
       break;
     case '까마귀 마녀단':
-      desc = <p className='small'>정확히 무엇을 하는지는 알 수 없는 집단.<br /> 까마귀를 심볼로 하며 여성 마법사들이 속한다.</p>;
+      desc = <span className='blue'>정확히 무엇을 하는지는 알 수 없는 집단.<br /> 까마귀를 심볼로 하며 여성 마법사들이 속한다.</span>;
       break;
     case '해골 교단':
-      desc = <p className='small'>죽음의 신을 섬긴다. 다소 과격하고, 광적이게 섬긴다.<br />산 자를 죽은 자로 만들려한다.</p>;
+      desc = <span className='blue'>죽음의 신을 섬긴다. 다소 과격하고, 광적이게 섬긴다.<br />산 자를 죽은 자로 만들려한다.</span>;
       break;
     case '명신교단':
-      desc = <p className='small'>죽음의 신을 섬긴다. 정상적이게 섬긴다.<br />해골 교단을 이단으로 간주하며 소탕하려한다.</p>;
+      desc = <span className='blue'>죽음의 신을 섬긴다. 정상적이게 섬긴다.<br />해골 교단을 이단으로 간주하며 소탕하려한다.</span>;
       break;
     case '파나믹 교단':
-      desc = <p className='small'>무기를 사용하지 않으며 맨몸을 단련시키는 수행을 하는 교단.<br /> 무술의 신 파나믹을 섬긴다.</p>;
+      desc = <span className='blue'>무기를 사용하지 않으며 맨몸을 단련시키는 수행을 하는 교단.<br /> 무술의 신 파나믹을 섬긴다.</span>;
       break;
     case '기계황신교':
-      desc = <p className='small'>기계 숲에 기거하는 교단. 기계 숲의 왕을 신으로 신격화하여 섬기고 있다.<br />침입자를 사살한다.</p>;
+      desc = <span className='blue'>기계 숲에 기거하는 교단. 기계 숲의 왕을 신으로 신격화하여 섬기고 있다.<br />침입자를 사살한다.</span>;
       break;
     case '기계신교':
-      desc = <p className='small'>기계황신교와 마찬가지로 기계 숲의 왕을 섬기지만 저돌적이지 않다.<br />타지역에도 포진되어있다.</p>;
+      desc = <span className='blue'>기계황신교와 마찬가지로 기계 숲의 왕을 섬기지만 저돌적이지 않다.<br />타지역에도 포진되어있다.</span>;
       break;
     case '신비교':
-      desc = <p className='small'>신비와 기적의 신을 섬기는 교단이었으나 현재엔 붕괴되었다.</p>;
+      desc = <span className='blue'>신비와 기적의 신을 섬기는 교단이었으나 현재엔 붕괴되었다.</span>;
       break;
     case '나티레네 교단':
-      desc = <p className='small'>물의 여신 나티레네를 섬기는 교단.<br />나티레네의 수족들인 물의 정령과 계약을 하기도 한다.</p>;
+      desc = <span className='blue'>물의 여신 나티레네를 섬기는 교단.<br />나티레네의 수족들인 물의 정령과 계약을 하기도 한다.</span>;
       break;
     case '종족연합':
-      desc = <p className='small'>수많은 종족들이 하나의 뜻을 이루기 위해 일으킨 연합.<br /> 이레귤러를 이 땅에서 몰아내려고 한다.</p>;
+      desc = <span className='blue'>수많은 종족들이 하나의 뜻을 이루기 위해 일으킨 연합.<br /> 이레귤러를 이 땅에서 몰아내려고 한다.</span>;
       break;
     case '반 종족연합':
-      desc = <p className='small'>종족연합이 탄생하자 이레귤러들이 자신들의<br />수하들을 결집시켜 형성한 이레귤러 집단.</p>;
+      desc = <span className='blue'>종족연합이 탄생하자 이레귤러들이 자신들의<br />수하들을 결집시켜 형성한 이레귤러 집단.</span>;
       break;
     case '파멸신교':
-      desc = <p className='small'>파멸의 신을 섬기는 집단. 정상이라고는 볼 수 없다.<br />전세계적인 테러를 일삼는다. 진심으로 파멸을 가져오려고 애쓴다.</p>;
+      desc = <span className='blue'>파멸의 신을 섬기는 집단. 정상이라고는 볼 수 없다.<br />전세계적인 테러를 일삼는다. 진심으로 파멸을 가져오려고 애쓴다.</span>;
       break;
   }
 

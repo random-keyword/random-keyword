@@ -9,7 +9,6 @@ const AppLayout = ({ children, }) => {
   const headerStyle = css`
     box-sizing: border-box;
     width: 100%;
-    margin-bottom: 17px;
     background: #3178f2;
     padding: 10px;
     
@@ -18,6 +17,14 @@ const AppLayout = ({ children, }) => {
       color: #ffffff;
       font-weight: 900;
       margin-bottom: 10px;
+      font-size: 3rem;
+
+      @media (min-width: 451px) and (max-width: 800px) {
+        font-size: 2.4rem;
+      }
+      @media (min-width: 1px) and (max-width: 450px) {
+        font-size: 1.8rem;
+      }
     }
 
     & > nav {
@@ -26,12 +33,22 @@ const AppLayout = ({ children, }) => {
 
       & > a {
         display: inline-block;
-        padding: 5px 10px;
+        padding: 2px 7px;
+        margin-top: 5px;
         margin-right: 5px;
         border-radius: 5px;
         border: 2px solid #ffffff;
         font-weight: 500;
         color: #ffffff;
+        font-size: 1.3rem;
+
+        @media (min-width: 451px) and (max-width: 800px) {
+          font-size: 1.1rem;
+        }
+        @media (min-width: 1px) and (max-width: 450px) {
+          font-size: 0.9rem;
+          font-weight: 400;
+        }
 
         &:hover {
           background: #ffffff;
@@ -47,9 +64,15 @@ const AppLayout = ({ children, }) => {
     box-sizing: border-box;
     background: #3178f2;
     padding: 10px;
-    margin-top: 20px;
     text-align: center;
-    font-size: 14pt;
+    font-size: 2rem;
+
+    @media (min-width: 451px) and (max-width: 800px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1px) and (max-width: 450px) {
+      font-size: 1rem;
+    }
 
     & > p {
       color: #ffffff;
@@ -75,9 +98,13 @@ const AppLayout = ({ children, }) => {
   `;
 
   const middleStyle = css`
-    width: 100%;
+    width: calc(100% - 20px);
     box-sizing: border-box;
     flex: 1;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 10px #33333390;
+    margin: 10px;
+    border-radius: 10px;
   `;
 
   return (
