@@ -16,7 +16,7 @@ import {
 
 const text = {
   title: '패션 컨셉 - 랜덤 키워드',
-  link: 'https://random-keyword.github.io/app/keyword/clothes',
+  link: 'https://random-keyword.github.io/keyword/clothes',
 };
 
 const KeywordClothes = () => {

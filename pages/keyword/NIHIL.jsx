@@ -11,7 +11,7 @@ import StyledArticle from '@components/StyledArticle';
 
 const text = {
   title: '니힐 전용 - 랜덤 키워드',
-  link: 'https://random-keyword.github.io/app/keyword/NIHIL',
+  link: 'https://random-keyword.github.io/keyword/NIHIL',
 };
 
 const KeywordNIHIL = () => {

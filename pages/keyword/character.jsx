@@ -9,7 +9,7 @@ import { RandomKeywordData } from '@data/RandomKeywordData';
 
 const text = {
   title: '캐릭터 컨셉 - 랜덤 키워드',
-  link: 'https://random-keyword.github.io/app/keyword/character',
+  link: 'https://random-keyword.github.io/keyword/character',
 };
 
 const KeywordCharacter = () => {

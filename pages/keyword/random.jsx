@@ -6,7 +6,7 @@ import StyledArticle from '@components/StyledArticle';
 
 const text = {
   title: '랜덤 키워드 - 랜덤 키워드',
-  link: 'https://random-keyword.github.io/app/keyword/random',
+  link: 'https://random-keyword.github.io/keyword/random',
 };
 
 const KeywordRandom = () => {

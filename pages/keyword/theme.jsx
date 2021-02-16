@@ -9,7 +9,7 @@ import { count, getMajor, getPlaying5Card, getMinor } from '@utils/getOtherKeywo
 
 const text = {
   title: '여러가지 테마 - 랜덤 키워드',
-  link: 'https://random-keyword.github.io/app/keyword/theme',
+  link: 'https://random-keyword.github.io/keyword/theme',
 };
 
 const KeywordTheme = () => {
