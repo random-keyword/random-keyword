@@ -50,18 +50,25 @@ const KeywordColor = () => {
       & > .color-item {
         width: 90%;
         text-align: center;
-        padding: 5px 10px;
+        padding: 20px;
         font-weight: 900;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        border: 2px solid #000000;
+
+        &:nth-last-of-type(1) {
+          margin-bottom: 0px;
+        }
 
         & > .normal {
-          font-size: 3rem;
+          font-size: 2rem;
           display: block;
 
           @media (min-width: 451px) and (max-width: 800px) {
-            font-size: 2rem;
+            font-size: 1.5rem;
           }
           @media (min-width: 1px) and (max-width: 450px) {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
           }
         }
       }
