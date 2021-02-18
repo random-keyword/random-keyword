@@ -33,9 +33,11 @@ const KeywordNIHIL = () => {
   }, []);
 
   const onClickOrganization = useCallback(() => {
-    setKeyword(<span className='blue'>{getKeyword(NihilData.organization)}</span>);
+    const item = getKeyword(NihilData.organization);
+    
+    setKeyword(<span className='blue'>{item}</span>);
     setIsDesc(true);
-    setDesc(organizationDesc(getKeyword(NihilData.organization)));
+    setDesc(organizationDesc(item));
     setSize('normal');
   }, []);
 
