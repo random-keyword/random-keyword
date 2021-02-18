@@ -102,10 +102,10 @@ const AppLayout = ({ children, }) => {
     width: calc(100% - 20px);
     box-sizing: border-box;
     flex: 1;
-    overflow-y: scroll;
     box-shadow: 0px 0px 10px #33333390;
     margin: 10px;
     border-radius: 10px;
+    overflow-y: scroll;
   `;
 
   return (

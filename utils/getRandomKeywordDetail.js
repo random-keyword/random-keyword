@@ -88,11 +88,11 @@ export const getRandomKeywordDetail = () => {
   }
 };
 
-export const getRandom5Keyword = () => {
+export const getRandomKeyword = (number) => {
   const box = [];
   const anotherBox = [];
   
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < number; i++) {
     const item = getRandomKeywordDetail();
 
     if (anotherBox.includes(item)) {
@@ -108,8 +108,8 @@ export const getRandom5Keyword = () => {
     }
   }
 
-  const item = box.map(value => (
-    <span className='blue-block' key={uuid()}>{value}</span>
+  const item = box.map((value, index) => (
+    <span className='blue-block' key={uuid()}>{index + 1}. {value}</span>
   ));
 
   return item;

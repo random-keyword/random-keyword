@@ -58,11 +58,19 @@ const StyledArticle = ({ children, }) => {
         }
       }
 
+      & > .no-scroll {
+        align-items: center;
+      }
+
+      & > .scroll {
+        overflow-y: scroll;
+      }
+
       & > #keyword-container {
         flex: 1;
         display: flex;
-        align-items: center;
         width: 100%;
+        margin-top: 10px;
 
         & > div > p {
           width: 100%;
