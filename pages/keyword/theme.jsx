@@ -17,6 +17,7 @@ const KeywordTheme = () => {
   const [ sub, setSub, ] = useState('');
   const [ size, setSize, ] = useState('normal');
   const [ isSub, setIsSub, ] = useState(false);
+  const [ name, setName, ] = useState('no-scroll');
 
   const onClickZodiac = useCallback(() => {
     setKeyword(<span className='blue'>{getKeyword(ZodiacData)}</span>);
@@ -71,7 +72,7 @@ const KeywordTheme = () => {
             <button onClick={onClickMajor}>메이저 아르카나 ({count.majorTarot}개)</button>
             <button onClick={onClickMinor}>마이너 아르카나 ({count.minorTarot}개)</button>
           </header>
-          <div id='keyword-container'>
+          <div id='keyword-container' className={name}>
             <div>
               <p className={size}>{ keyword }</p>
               {

@@ -99,12 +99,9 @@ const AppLayout = ({ children, }) => {
   `;
 
   const middleStyle = css`
-    width: calc(100% - 20px);
+    width: 100%;
     box-sizing: border-box;
     flex: 1;
-    box-shadow: 0px 0px 10px #33333390;
-    margin: 10px;
-    border-radius: 10px;
     overflow-y: scroll;
   `;
 

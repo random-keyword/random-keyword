@@ -6,12 +6,13 @@ const {
   random, tool, tableWare, astronomy, fruit,
   vegetable, gem, weather, job, status,
   novility, metal, figure, body, state,
-  weapon, shield, genre,
+  weapon, shield, genre, sins, zodiac,
 } = RandomKeywordData;
 
-export const totalCount = (random.length - 17) + tool.length + tableWare.length + astronomy.length + fruit.length
+export const totalCount = (random.length - 22) + tool.length + tableWare.length + astronomy.length + fruit.length
 + vegetable.length + gem.length + weather.length + job.length + (status.length - 1) + novility.length + metal.length
-+ figure.length + body.length + state.length + weapon.length + shield.length + genre.length;
++ figure.length + body.length + state.length + weapon.length + shield.length + genre.length + zodiac.length
++ sins.length;
 
 export const getRandomKeywordDetail = () => {
   const item = getKeyword(RandomKeywordData.random);
@@ -82,6 +83,12 @@ export const getRandomKeywordDetail = () => {
     return newItem;
   } else if (item === '장르') {
     newItem = getKeyword(genre);
+    return newItem;
+  } else if (item === '황도 12궁') {
+    newItem = getKeyword(zodiac);
+    return newItem;
+  } else if (item === '칠죄종') {
+    newItem = getKeyword(sins);
     return newItem;
   } else {
     return item;

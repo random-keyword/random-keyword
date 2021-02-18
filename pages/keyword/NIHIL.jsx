@@ -19,6 +19,7 @@ const KeywordNIHIL = () => {
   const [ isDesc, setIsDesc, ] = useState(false);
   const [ desc, setDesc, ] = useState('');
   const [ size, setSize, ] = useState('normal');
+  const [ name, setName, ] = useState('no-scroll');
 
   const onClickRace = useCallback(() => {
     setKeyword(<span className='blue'>{getKeyword(NihilData.race)}</span>);
@@ -77,7 +78,7 @@ const KeywordNIHIL = () => {
             <button onClick={onClickBackStory}>배경 스토리 ({backStoryCount}개)</button>
             <button onClick={onClickClothSet}>의상 세트</button>
           </header>
-          <div id='keyword-container'>
+          <div id='keyword-container' className={name}>
             <div>
               <p className={size}>{keyword}</p>
               {

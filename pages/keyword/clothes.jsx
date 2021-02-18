@@ -22,6 +22,7 @@ const text = {
 const KeywordClothes = () => {
   const [ keyword, setKeyword, ] = useState(<span className='blue'>버튼을 클릭하세요.</span>);
   const [ size, setSize, ] = useState('normal');
+  const [ name, setName, ] = useState('no-scroll');
 
   const onClickFasion = useCallback(() => {
     setKeyword(<span className='blue'>{getKeyword(FashionData)}</span>);
@@ -155,7 +156,7 @@ const KeywordClothes = () => {
             <button onClick={onClickExtra}>의류 잡화 ({count.extra}개)</button>
             <button onClick={onClickAccessory}>악세서리 ({count.acc}개)</button>
           </header>
-          <div id='keyword-container'>
+          <div id='keyword-container' className={name}>
             <div>
               <p className={size}>{ keyword }</p>
             </div>

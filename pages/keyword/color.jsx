@@ -7,7 +7,7 @@ import { get5Color, getColor } from '@utils/getColor';
 
 const text = {
   title: '랜덤 컬러 - 랜덤 키워드',
-  link: 'https://random-keyword.github.io/keyword/NIHIL',
+  link: 'https://random-keyword.github.io/keyword/color',
 };
 
 const KeywordColor = () => {

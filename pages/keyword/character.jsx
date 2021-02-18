@@ -15,6 +15,7 @@ const text = {
 const KeywordCharacter = () => {
   const [ keyword, setKeyword, ] = useState(<span className='blue'>버튼을 클릭하세요.</span>);
   const [ size, setSize, ] = useState('normal');
+  const [ name, setName, ] = useState('no-scroll');
 
   const onClickGenre = useCallback(() => {
     setKeyword(<span className='blue'>{getKeyword(RandomKeywordData.genre).replace('장르/', '')}</span>);
@@ -124,7 +125,7 @@ const KeywordCharacter = () => {
             <button onClick={onClickShield}>방패 ({count.shield}개)</button>
             <button onClick={onClickSuperPower}>초능력 ({count.superPower}개)</button>
           </header>
-          <div id='keyword-container'>
+          <div id='keyword-container' className={name}>
             <div>
               <p className={size}>{ keyword }</p>
             </div>

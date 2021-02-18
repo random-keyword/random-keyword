@@ -1,6 +1,6 @@
 {
   "name": "random-keyword",
-  "version": "1.1.0",
+  "version": "1.1.5",
   "description": "고민이나 선택 장애를 한 번에 해결해주는 랜덤 키워드!",
   "main": "index.js",
   "repository": {

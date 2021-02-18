@@ -64,6 +64,21 @@ const StyledArticle = ({ children, }) => {
 
       & > .scroll {
         overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          width: 20px;
+          
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: #3178f2;
+          border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: #3178f230;
+          border-radius: 10px;
+        }
       }
 
       & > #keyword-container {
