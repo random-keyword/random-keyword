@@ -175,37 +175,73 @@ export const getClothSet = () => {
   
   if (genderItem === '남성') {
     top = maleTop;
-    bottom = maleBottom;
     under = maleUnder;
-    shoes = maleShoes;
 
-    topCount = clothMale.top.length;
-    bottomCount = clothMale.bottom.length;
-    underCount = clothMale.under.length;
-    shoesCount = clothMale.shoes.length;
+    if (top === '한벌옷') {
+      bottom = '-';
+    } else if (top === '판금 전신 갑옷') {
+      bottom = '-';
+    } else if (top === '청동 전신 갑옷') {
+      bottom = '-';
+    } else if (top === '강철 전신 갑옷') {
+      bottom = '-';
+    } else {
+      bottom = maleBottom;
+    }
+
+    if (bottom === '하반신 전체가 세트인 의상') {
+      shoes = '-';
+    } else if (bottom === '갑옷 하의 풀세트') {
+      shoes = '-';
+    } else {
+      shoes = maleShoes;
+    }
+
+    topCount = clothMale.top.length - 2;
+    bottomCount = clothMale.bottom.length - 2;
+    underCount = clothMale.under.length - 2;
+    shoesCount = clothMale.shoes.length - 2;
   } else if (genderItem === '여성') {
     top = femaleTop;
-    bottom = femaleBottom;
     under = femaleUnder;
-    shoes = femaleShoes;
 
-    topCount = clothFemale.top.length;
-    bottomCount = clothFemale.bottom.length;
-    underCount = clothFemale.under.length;
-    shoesCount = clothFemale.shoes.length;
+    if (top === '한벌옷') {
+      bottom = '-';
+    } else if (top === '판금 전신 갑옷') {
+      bottom = '-';
+    } else if (top === '청동 전신 갑옷') {
+      bottom = '-';
+    } else if (top === '강철 전신 갑옷') {
+      bottom = '-';
+    } else {
+      bottom = femaleBottom;
+    }
+
+    if (bottom === '하반신 전체가 세트인 의상') {
+      shoes = '-';
+    } else if (bottom === '갑옷 하의 풀세트') {
+      shoes = '-';
+    } else {
+      shoes = femaleShoes;
+    }
+
+    topCount = clothFemale.top.length - 2;
+    bottomCount = clothFemale.bottom.length - 2;
+    underCount = clothFemale.under.length - 2;
+    shoesCount = clothFemale.shoes.length - 2;
   }
 
   const result = (
     <>
       성별: <span className='blue'>{genderItem}</span> ({clothGender.length}개)<br />
-      외투: <span className='blue'>{outerItem}</span> ({outer.length}개)<br />
+      외투: <span className='blue'>{outerItem}</span> ({outer.length - 2}개)<br />
       상의: <span className='blue'>{top}</span> ({topCount}개)<br />
       하의: <span className='blue'>{bottom}</span> ({bottomCount}개)<br />
-      속옷: <span className='blue'>{under}</span> ({underCount}개)<br />
       신발: <span className='blue'>{shoes}</span> ({shoesCount}개)<br />
-      기타: <span className='blue'>{extraItem}</span> ({extra.length}개)<br />
-      악세서리: <span className='blue'>{accItem}</span> ({acc.length}개)<br />
-      키워드: <span className='blue'>{keywordItem}</span> ({keyword.length}개)
+      속옷: <span className='blue'>{under}</span> ({underCount}개)<br />
+      기타: <span className='blue'>{extraItem}</span> ({extra.length - 2}개)<br />
+      악세서리: <span className='blue'>{accItem}</span> ({acc.length - 2}개)<br />
+      키워드: <span className='blue'>{keywordItem}</span> ({keyword.length - 2}개)
     </>
   );
 

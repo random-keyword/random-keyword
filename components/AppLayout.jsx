@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { css } from '@emotion/react';
+import { siteData } from '@data/siteData';
 
 const AppLayout = ({ children, }) => {
   const year = new Date().getFullYear();
@@ -110,7 +111,7 @@ const AppLayout = ({ children, }) => {
   return (
     <>
       <header css={headerStyle}>
-        <h1>랜덤 키워드</h1>
+        <h1>랜덤 키워드 {siteData.version}</h1>
         <nav>
           <Link href='/'><a>홈</a></Link>
           <Link href='/keyword/NIHIL'><a>니힐 전용</a></Link>
