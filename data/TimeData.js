@@ -1,7 +1,7 @@
-export const Hour24Data = {
-  hour: Array(24).fill(0).map((value, index) => value + index),
-  minute: Array(60).fill(0).map((value, index) => value + index),
-  second: Array(60).fill(0).map((value, index) => value + index),
+export const TimeData = {
+  hour: Array(24).fill(0).map((value, index) => `${value + index}`.padStart(2, 0)),
+  minute: Array(60).fill(0).map((value, index) => `${value + index}`.padStart(2, 0)),
+  second: Array(60).fill(0).map((value, index) => `${value + index}`.padStart(2, 0)),
 };
 
 export const CalendarData = {

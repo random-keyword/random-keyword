@@ -115,6 +115,7 @@ const AppLayout = ({ children, }) => {
           <Link href='/keyword/character'><a>캐릭터 컨셉</a></Link>
           <Link href='/keyword/clothes'><a>패션 컨셉</a></Link>
           <Link href='/keyword/theme'><a>여러가지 테마</a></Link>
+          <Link href='/keyword/time'><a>날짜와 시간</a></Link>
           <Link href='/keyword/color'><a>랜덤 컬러</a></Link>
           <Link href='/keyword/random'><a>랜덤 키워드</a></Link>
         </nav>
