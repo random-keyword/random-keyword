@@ -40,7 +40,8 @@ export const NihilData = {
     '사기꾼', '파계승', '학자', '마도학자', '음양사',
     '항해사', '선장', '교사', '세계의 수호자', '조선공',
     '수호자', '모험가', '악마 소환사', '악마술사', '악마 기사',
-    '교황', '음유시인',
+    '교황', '음유시인', '곡예사', '보안관', '간수',
+    '교도관',
 
     '원소 마법사', '암흑 마법사', '신성 마법사', '그림자 마법사', '소환 마법사',
     '정령 마법사', '마법투사', '마법 기사',
@@ -63,7 +64,7 @@ export const NihilData = {
 };
 
 export const NihilBackStoryData = {
-  where: backStoryData.where.concat([
+  where: backStoryData.where.fantasy().concat([
     '드라스 섬의 어딘가', '발라큐아 섬의 어딘가', '바르기스 대륙의 어딘가', '유센티아 대륙의 어딘가', '썩은 고원의 어딘가',
     '리자루스 제도의 어딘가', '조각 섬의 어딘가', '검은 협곡의 어딘가', '강철 제국의 어딘가', '신 제국의 어딘가',
     '고르고니아 제국의 어딘가', '하얀 숲의 어딘가', '드라코니르 왕국의 어딘가', '철벽 섬의 어딘가', '이름 없는 섬',
@@ -72,7 +73,7 @@ export const NihilBackStoryData = {
 
     '이레귤러 렐름의 어딘가',
   ]),
-  purpose: backStoryData.purpose.concat([
+  purpose: backStoryData.purpose.fantasy().concat([
     '이레귤러의 봉인을 풀기', '이레귤러를 봉인하기',
   ]),
   gender: CharacterData.gender,

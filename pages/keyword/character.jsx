@@ -3,7 +3,7 @@ import Head from 'next/head';
 import AppLayout from '@components/AppLayout';
 import { getKeyword } from '@utils/getKeyword';
 import StyledArticle from '@components/StyledArticle';
-import { count, getBackStory, getStatus, getSuperPower } from '@utils/getCharcterKeyword';
+import { count, getBackStory, getStatus, getSuperPower, getClass } from '@utils/getCharcterKeyword';
 import { CharacterData } from '@data/CharacterData';
 import { RandomKeywordData } from '@data/RandomKeywordData';
 
@@ -43,7 +43,7 @@ const KeywordCharacter = () => {
   }, []);
 
   const onClickClass = useCallback(() => {
-    setKeyword(<span className='blue'>{getKeyword(CharacterData.class)}</span>);
+    setKeyword(getClass());
     setSize('normal');
   }, []);
 

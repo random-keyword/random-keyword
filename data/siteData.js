@@ -1,3 +1,3 @@
 export const siteData = {
-  version: 'v1.2.0',
+  version: 'v3.2.0',
 };

@@ -7,12 +7,13 @@ const {
   vegetable, gem, weather, job, status,
   novility, metal, figure, body, state,
   weapon, shield, genre, sins, zodiac,
+  breastSize, type, asteria, race, creature,
 } = RandomKeywordData;
 
-export const totalCount = (random.length - 22) + tool.length + tableWare.length + astronomy.length + fruit.length
+export const totalCount = (random.length - 27) + tool.length + tableWare.length + astronomy.length + fruit.length
 + vegetable.length + gem.length + weather.length + job.length + (status.length - 1) + novility.length + metal.length
 + figure.length + body.length + state.length + weapon.length + shield.length + genre.length + zodiac.length
-+ sins.length;
++ sins.length + breastSize.length + type.length + asteria.length + race.length + creature.length;
 
 export const getRandomKeywordDetail = () => {
   const item = getKeyword(RandomKeywordData.random);
@@ -87,8 +88,23 @@ export const getRandomKeywordDetail = () => {
   } else if (item === '황도 12궁') {
     newItem = getKeyword(zodiac);
     return newItem;
+  } else if (item === '타입') {
+    newItem = getKeyword(type);
+    return newItem;
+  } else if (item === '별자리') {
+    newItem = getKeyword(asteria);
+    return newItem;
   } else if (item === '칠죄종') {
     newItem = getKeyword(sins);
+    return newItem;
+  } else if (item === '가슴 사이즈') {
+    newItem = getKeyword(breastSize);
+    return newItem;
+  } else if (item === '종족') {
+    newItem = getKeyword(race);
+    return newItem;
+  } else if (item === '환상종') {
+    newItem = getKeyword(creature);
     return newItem;
   } else {
     return item;
@@ -115,9 +131,7 @@ export const getRandomKeyword = (number) => {
     }
   }
 
-  const item = box.map((value, index) => (
+  return box.map((value, index) => (
     <span className='blue-block' key={uuid()}>{index + 1}. {value}</span>
   ));
-
-  return item;
 };

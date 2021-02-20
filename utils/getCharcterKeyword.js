@@ -7,11 +7,11 @@ const { where, purpose, gender, who, } = backStoryData;
 
 export const count = {
   genre: RandomKeywordData.genre.length,
-  backStory: where.length * purpose.length * gender.length * who.length,
+  backStory: (where.real().length + where.fantasy().length) * (purpose.real.length + purpose.fantasy().length) * gender.length * (who.real.length + who.fantasy.length),
   role: CharacterData.characterRole.length,
   type: CharacterData.characterImage.length,
   race: CharacterData.race.length,
-  charClass: CharacterData.class.length,
+  charClass: CharacterData.class.real.length + CharacterData.class.fantasy.length,
   status: (CharacterData.status.length - 1) + CharacterData.nobility.length,
   gender: CharacterData.gender.length,
   positive: CharacterData.positive.length,
@@ -25,13 +25,27 @@ export const count = {
 };
 
 export const getBackStory = () => {
-  const whereItem = getKeyword(backStoryData.where);
-  const purposeItem = getKeyword(backStoryData.purpose);
-  const genderItem = getKeyword(backStoryData.gender);
-  const whoItem = getKeyword(backStoryData.who);
+  const d2 = getKeyword([ 1, 2, ]);
+  const genderItem = getKeyword(gender);
+  let whereItem, purposeItem, whoItem;
+  let message;
+
+  if (d2 === 1) {
+    whereItem = getKeyword(where.real());
+    purposeItem = getKeyword(purpose.real);
+    whoItem = getKeyword(who.real);
+    message = '현실 기반';
+  } else if (d2 === 2) {
+    whereItem = getKeyword(where.fantasy());
+    purposeItem = getKeyword(purpose.fantasy());
+    whoItem = getKeyword(who.fantasy);
+    message = '판타지 기반';
+  }
+  
 
   const item = (
     <>
+      [{message}]<br />
       <span className='blue'>{purposeItem}</span> 위해<br />
       <span className='blue'>{whereItem}</span>에서 온<br />
       <span className='blue'>{genderItem}</span> <span className='blue'>{whoItem}</span>.
@@ -69,4 +83,24 @@ export const getSuperPower = () => {
   );
 
   return item;
+};
+
+export const getClass = () => {
+  const d2 = getKeyword([ 1, 2, ]);
+  let item;
+  let message;
+
+  if (d2 === 1) {
+    item = getKeyword(CharacterData.class.real);
+    message = '현실 기반';
+  } else {
+    item = getKeyword(CharacterData.class.fantasy);
+    message = '판타지 기반';
+  }
+  return (
+    <>
+      [ {message} ]
+      <span className='blue-block'>{item}</span>
+    </>
+  );
 };

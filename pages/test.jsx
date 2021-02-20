@@ -1,16 +1,13 @@
 import React from 'react';
-import { RandomKeywordData } from '@data/RandomKeywordData';
+import { backStoryData } from '@data/CharacterData';
 import { v4 as uuid } from 'uuid';
 
-const WordList = () => {
-  
-  const { 
-    zodiac,
-  } = RandomKeywordData;
+// backStoryData.where.real.splice(40, 8);
 
+const WordList = () => {
   return (
     <>
-      {zodiac.map((value) => (
+      {backStoryData.purpose.fantasy().map((value, index) => (
         <p key={uuid()}>{ `${value}` }</p>
       ))}
     </>
