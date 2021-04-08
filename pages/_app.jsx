@@ -36,6 +36,9 @@ const App = ({ Component, }) => {
         <meta name='keywords' content={text.keyword} />
         <meta name='author' content='NIHILncunia'/>
         <meta name='generator' content='VS Code'/>
+
+        <meta name='google-site-verification' content='iIK1QMzAYU9YHlIbkvglYdu5GF4WsxIBaV_geNrPVMI' />
+        <meta name='naver-site-verification' content='829341882137483b592261513d6bf2b012e5115b' />
       </Head>
       <Component />
     </>
